@@ -13,5 +13,6 @@ for f in *.zip; do
     done
 done
 
+cd ../
 
 docker compose -f docker-compose-all.yml up -d
