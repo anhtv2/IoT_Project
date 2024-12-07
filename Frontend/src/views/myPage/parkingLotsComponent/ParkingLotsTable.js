@@ -77,15 +77,6 @@ export default function ParkingLotsTable({
                             <TableCell align="center">
                                 {row.latitude}
                             </TableCell>
-                            <TableCell align="center">
-                                {row.available_spaces.car}
-                            </TableCell>
-                            <TableCell align="center">
-                                {row.available_spaces.motorbike}
-                            </TableCell>
-                            <TableCell align="center">
-                                {row.available_spaces.bicycle}
-                            </TableCell>
                             <TableCell>
                                 <IconButton onClick={() => deleteParkingLots(row.id)}>
                                     <DeleteIcon />

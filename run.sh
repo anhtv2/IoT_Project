@@ -15,6 +15,6 @@ done
 
 cd ../
 
-docker compose -f docker-compose-all.yml up -d
+docker compose -f docker-compose.yml up -d
 
-echo '\i /tmp/sql/init.sql' | docker exec -i postgres psql -U app
+# echo '\i /tmp/sql/init.sql' | docker exec -i postgres psql -U app
